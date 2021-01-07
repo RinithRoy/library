@@ -1,0 +1,13 @@
+.card-header
+{
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(207, 177, 140);
+    color: rgb(214, 148, 148);
+    text-align: center;
+}
+.card
+{
+    background-color: rgb(224, 105, 165);
+}

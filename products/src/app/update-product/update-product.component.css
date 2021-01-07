@@ -1,0 +1,28 @@
+#btn
+{
+    margin-top: 2px;
+    margin-left: 65px;
+    background-color:rgb(201, 131, 119);
+    color:  black;
+    font-weight: bold; 
+    padding: 8px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card-header
+{
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(201, 148, 118);
+    color: rgb(196, 123, 123);
+    text-align: center;
+}
+.card
+{
+    background-color: rgb(181, 216, 140);;
+}
+.cl
+{
+    color: black;
+    font-size: larger;
+}

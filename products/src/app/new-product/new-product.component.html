@@ -1,0 +1,81 @@
+<div class="card">
+    <form (ngSubmit)="AddProduct()" #userForm = "ngForm" novalidate>
+<div class="card-header">{{title}}</div>
+<div class="card-body">
+<div class="table-responsive">
+    <table class="table">
+        <tbody>
+        <tr>
+            <td><label class="cl">Product Id</label></td>
+            <td><input type="number" required name="p_id" [(ngModel)] = "productItem.productId" #p_id ="ngModel"  [class.is-invalid]="p_id.invalid && p_id.touched" class = "form-control"/></td>
+            <div *ngIf="p_id.errors && (p_id.valid || p_id.touched)">
+                <small class="text-danger" *ngIf = "p_id.errors.required">Product Id is Required</small>
+                <!-- <small class="text-danger" *ngIf = "email.errors.pattern">Enter a Valid Email</small> -->
+            </div>
+        </tr>
+        <tr>
+            <td><label class="cl">Product Name</label></td>
+            <td><input type="text" required name="p_name" [(ngModel)] = "productItem.productName" #p_name ="ngModel"  [class.is-invalid]="p_name.invalid && p_name.touched" class = "form-control"/></td>
+            <div *ngIf="p_name.errors && (p_name.valid || p_name.touched)">
+                <small class="text-danger" *ngIf = "p_name.errors.required">Product Name is Required</small>
+                <!-- <small class="text-danger" *ngIf = "email.errors.pattern">Enter a Valid Email</small> -->
+            </div>
+        </tr>
+        <tr>
+            <td><label class="cl">Product Code</label></td>
+            <td><input type="text" required name="p_code" [(ngModel)] = "productItem.productCode" #p_code ="ngModel"  [class.is-invalid]="p_code.invalid && p_code.touched" class = "form-control"/></td>
+            <div *ngIf="p_code.errors && (p_code.valid || p_code.touched)">
+                <small class="text-danger" *ngIf = "p_code.errors.required">Product Code is Required</small>
+                <!-- <small class="text-danger" *ngIf = "email.errors.pattern">Enter a Valid Email</small> -->
+            </div>
+        </tr>
+        <tr>
+            <td><label class="cl">Product Date</label></td>
+            <td><input type="text" required name="p_date" [(ngModel)] = "productItem.releaseDate" #p_date ="ngModel"  [class.is-invalid]="p_date.invalid && p_date.touched" class = "form-control"/></td>
+            <div *ngIf="p_date.errors && (p_date.valid || p_date.touched)">
+                <small class="text-danger" *ngIf = "p_date.errors.required">Product Date is Required</small>
+                <!-- <small class="text-danger" *ngIf = "email.errors.pattern">Enter a Valid Email</small> -->
+            </div>
+        </tr>
+        <tr>
+            <td><label class="cl">Product Description</label></td>
+            <td><input type="text" required name="p_desc" [(ngModel)] = "productItem.description" #p_desc ="ngModel"  [class.is-invalid]="p_desc.invalid && p_desc.touched" class = "form-control"/></td>
+            <div *ngIf="p_desc.errors && (p_desc.valid || p_desc.touched)">
+                <small class="text-danger" *ngIf = "p_desc.errors.required">Product Description is Required</small>
+                <!-- <small class="text-danger" *ngIf = "email.errors.pattern">Enter a Valid Email</small> -->
+            </div>
+        </tr>
+        <tr>
+            <td><label class="cl">Product Price</label></td>
+            <td><input type="number" required name="p_price" [(ngModel)] = "productItem.price" #p_price ="ngModel"  [class.is-invalid]="p_price.invalid && p_price.touched" class = "form-control"/></td>
+            <div *ngIf="p_price.errors && (p_price.valid || p_price.touched)">
+                <small class="text-danger" *ngIf = "p_price.errors.required">Product Price is Required</small>
+                <!-- <small class="text-danger" *ngIf = "email.errors.pattern">Enter a Valid Email</small> -->
+            </div>
+        </tr>
+        <tr>
+            <td><label class="cl">Product starRating</label></td>
+            <td><input type="number" required name="p_rating" [(ngModel)] = "productItem.starRating" #p_rating ="ngModel"  [class.is-invalid]="p_rating.invalid && p_rating.touched" class = "form-control"/></td>
+            <div *ngIf="p_rating.errors && (p_rating.valid || p_rating.touched)">
+                <small class="text-danger" *ngIf = "p_rating.errors.required">Product Rating is Required</small>
+                <!-- <small class="text-danger" *ngIf = "email.errors.pattern">Enter a Valid Email</small> -->
+            </div>
+        </tr>
+        <tr>
+            <td><label class="cl">Product ImageUrl</label></td>
+            <td><input type="text" required name="p_image" [(ngModel)] = "productItem.imageUrl" #p_image ="ngModel"  [class.is-invalid]="p_image.invalid && p_image.touched" class = "form-control"/></td>
+            <div *ngIf="p_image.errors && (p_image.valid || p_image.touched)">
+                <small class="text-danger" *ngIf = "p_image.errors.required">Product ImageURL is Required</small>
+                <!-- <small class="text-danger" *ngIf = "email.errors.pattern">Enter a Valid Email</small> -->
+            </div>
+        </tr>
+        </tbody>
+        <tr>
+            <td></td>
+            <td><button [disabled]="userForm.form.invalid" id="btn" type="submit" value="Submit">Add Product</button></td>
+        </tr>
+    </table>
+</div>
+</div>
+    </form>
+</div>

@@ -1,0 +1,19 @@
+div{
+    width: 100%;
+    background-color: rgb(216, 125, 125);
+    height: 50px;
+}
+a{
+    margin-left: 10px;
+    color: wheat;
+    text-decoration: none;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 5px;
+}
+h1
+{
+ background-color: rgb(132, 131, 226);
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ text-align: center;
+}
